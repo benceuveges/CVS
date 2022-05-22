@@ -23,10 +23,10 @@ IMAGE_HEIGHT = 512
 IMAGE_WIDTH = 1024
 PIN_MEMORY = True
 LOAD_MODEL = False
-TRAIN_IMG_DIR = "data/train_images/"
-TRAIN_MASK_DIR = "data/train_masks/"
-VAL_IMG_DIR = "data/val_images/"
-VAL_MASK_DIR = "data/val_masks/"
+TRAIN_IMG_DIR = "datasets/images_train/"
+TRAIN_MASK_DIR = "datasets/masks_train/"
+VAL_IMG_DIR = "datasets/images_val/"
+VAL_MASK_DIR = "datasets/masks_val/"
 
 def train_fn(loader, model, optimizer, loss_fn, scaler):
     loop = tqdm(loader)
